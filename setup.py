@@ -91,7 +91,7 @@ def main():
 
     setuptools.setup(
         name="point-cloud-utils",
-        version="0.31.0",
+        version="0.32.0",
         author="Francis Williams",
         author_email="francis@fwilliams.info",
         description="A Python library for common tasks on 3D point clouds and meshes",
@@ -108,7 +108,7 @@ def main():
         cmdclass=dict(build_ext=CMakeBuild),
         zip_safe=False,
         install_requires=[
-            'numpy',
+            'numpy>=2.0.0',
             'scipy'
         ],
         test_suite="tests"
