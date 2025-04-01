@@ -108,7 +108,7 @@ def main():
         cmdclass=dict(build_ext=CMakeBuild),
         zip_safe=False,
         install_requires=[
-            'numpy>=2.0.0',
+            'numpy',
             'scipy'
         ],
         test_suite="tests"
