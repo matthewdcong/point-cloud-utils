@@ -115,7 +115,7 @@ set(EMBREE_DIR "${EXTERNAL_DEP_DIR}/embree")
 if(NOT TARGET embree)
   download_dep(embree
                GIT_REPOSITORY https://github.com/embree/embree.git
-               GIT_TAG        v3.13.5
+               GIT_TAG        v4.3.3
   )
 
   # Note: On macOS, building embree as a static lib can only be done with a single ISA target.
