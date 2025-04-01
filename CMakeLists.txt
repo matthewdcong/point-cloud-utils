@@ -3,7 +3,6 @@ project(point-cloud-utils)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_BUILD_TYPE "Release")
 
-
 option(GEOGRAM_WITH_HLBFGS "Non-linear solver (Yang Liu's HLBFGS)"             ON)
 # option(NPE_WITH_EIGEN      "Whether to use the bundled version of Eigen"       ON)
 option(EIGEN_WITH_MKL      "Whether to build Eigen with intel MKL or not"      OFF)
