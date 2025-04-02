@@ -1,5 +1,5 @@
 #include <npe.h>
-#include <igl/embree/EmbreeIntersector.h>
+#include <common/embree_intersector.h>
 #include <tuple>
 #include <numeric>
 
@@ -7,7 +7,7 @@
 
 namespace py = pybind11;
 
-using Intersector = igl::embree::EmbreeIntersector;
+using Intersector = EmbreeIntersector;
 void hack_extra_ray_mesh_bindings(pybind11::module& m) {
     py::class_<Intersector, std::shared_ptr<Intersector>>(m, "_RayMeshIntersectorInternal")
     .def(py::init([]() {
